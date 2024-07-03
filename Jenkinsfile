@@ -10,6 +10,7 @@ pipeline {
                 script {
                         sh 'docker compose -f docker-compose.yml up -d'
                         sh 'docker ps'
+                        sh 'docker images'
                    
                 }
             }
